@@ -1,0 +1,168 @@
+<html>
+    <head>
+        <title>
+        BCalculator.    
+        </title>
+        <style>
+body{
+background:linear-gradient(288deg,#f06dbe,#ed6060,green,skyblue);
+width:100%;
+background-size:400% 400%;
+animation:gradient 10s ease infinite;
+}
+/* @keyframes gradient{
+0%{
+background-position:0% 50%
+}
+50%{
+background-position:100% 50%;
+}
+100%{
+background-position:0% 50%;
+}
+} */
+
+
+            .container{
+                height:472px;
+                width:800px;
+                /* border:2px solid rgb(0, 0, 0); */
+                margin-top: 100px;
+                text-align:center;
+                margin-left:25% ;
+            }
+            @media (min-width: 600px) and (max-width: 1279px)
+            {
+                .container{
+                height:450px;
+                width:800px;
+                /* border:2px solid rgb(0, 0, 0); */
+                margin-top: 100px;
+                text-align:center;
+                margin-left:10% ;
+            }
+            
+            }
+            #userinput{
+                height:70px;
+                width:540px;
+                font-weight:bold;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size:xx-large;
+                border:3px solid red
+            }
+            @media (min-width: 600px) and (max-width: 1279px)
+            {
+                #userinput{
+                height:160px;
+                width:800px;
+                font-weight:bold;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size:70px;
+                border:3px inset red
+            }   
+            }
+            .btn{
+                height:80px;
+                width:135px;
+                font-weight:bold;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size:larger;
+            }
+            @media (min-width: 600px) and (max-width: 1279px)
+            {
+                .btn{
+                height:190px;
+                width:210px;
+                font-weight:bold;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size:70px;
+            }
+            
+
+            }
+            
+            .btn:hover{
+                background-color: aliceblue;
+            }
+            .btnequal{
+                height:70px;
+                width:540px;
+                font-weight:bold;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size:larger;
+                
+            }
+            @media (min-width: 600px) and (max-width: 1279px)
+            {
+                .btnequal{
+                height:150px;
+                width:800px;
+                font-weight:bold;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size:80px;
+            }
+            
+
+            }
+            
+            .btnequal:hover{
+                background-color: aliceblue;
+            }
+            .operation{
+                background-color: rgb(46, 250, 90);
+                height:87px;
+                width:120px;     
+                font-weight:bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:xx-large;
+            }
+           
+            @media (min-width: 600px) and (max-width: 1279px)
+            {
+            
+            .operation{
+                background-color: rgb(46, 250, 90);
+                height:187px;
+                width:150px;     
+                font-weight:bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:70px;
+            }
+        }
+            </style>
+    </head>
+    <body>
+        <h1 style="text-align:center;font-size:60px;">BCalculator</h1>
+<div class="container">
+    <div class="calculator"> 
+    <input id="userinput"placeholder="0😎😎😎😎">
+    <br>
+    <button class="btn"onclick="press(1)">1</button>
+    <button class="btn"onclick="press(2)">2</button>
+    <button class="btn"onclick="press(3)">3</button>
+    <button class="operation"onclick="press('+')">+</button>
+    <br>
+    <button class="btn"onclick="press(4)">4</button>
+    <button class="btn"onclick="press(5)">5</button>
+    <button class="btn"onclick="press(6)">6</button>
+    <button class="operation"onclick="press('-')">-</button>
+    <br>
+    <button class="btn"onclick="press(7)">7</button>
+    <button class="btn"onclick="press(8)">8</button>
+    <button class="btn"onclick="press(9)">9</button>
+    <button class="operation"onclick="press('*')">*</button>
+    <br>
+    <button class="btn"onclick="press('.')">.</button>
+    <button class="btn"onclick="press(0)">0</button>
+    <button class="btn"onclick="erase()">clr</button>
+    <button class="operation"onclick="press('/')">/</button>
+ <br>   <button class="btnequal"onclick="equal()">=</button>
+    
+    </div>
+</div>
+    </body>
+    <script src="calculator.js"charset="utf-8">
+
+        </script>
+</html>
